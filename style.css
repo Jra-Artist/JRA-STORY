@@ -90,19 +90,7 @@ body{
         margin-right: 10px;
     }
 
-    .fronts{
-        height: 530px;
-        max-width: 1349spx;
-        
-    }
-
-    .fronts {
-        max-width: 100%;
-        height: auto;
-        border-radius: 5px; 
-    }
-
-    /*....................MGA COL........................*/
+  /*....................MGA COL........................*/
 
 .row{
     background-color: #01073b4d;
