@@ -30,7 +30,7 @@ body{
     background-image: url(background1.jpg);
     background-size: 100%auto;
      background-repeat: no-repeat;
-    background-attachment: fixed; /* This prevents the background from scrolling with the content */
+    background-attachment: fixed; 
     }
     
     nav {
