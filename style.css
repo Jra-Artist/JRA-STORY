@@ -1,4 +1,4 @@
-/* Icon beside title */
+/* ========== ICON & HEADER ========== */
 .icon {
   display: inline-block;
   width: 45px;
@@ -9,7 +9,6 @@
   vertical-align: middle;
 }
 
-/* Headings */
 h1 {
   background-color: #626cc2a4;
   color: #ffffff;
@@ -30,9 +29,9 @@ h3 {
   background-color: #52008850;
 }
 
-/* Background */
+/* ========== BODY & BACKGROUND ========== */
 body {
-  background-image: url(background1.jpg);
+  background-image: url('background1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -40,10 +39,10 @@ body {
   padding: 0;
 }
 
-/* Navigation bar */
+/* ========== NAVIGATION BAR ========== */
 nav {
   background-color: rgba(6, 62, 71, 0.74);
-  padding: 10px;
+  padding: 10px 20px;
   position: fixed;
   top: 0;
   right: 0;
@@ -51,6 +50,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
 }
 
 ul {
@@ -70,56 +70,58 @@ li a {
   text-decoration: none;
 }
 
-/* Content containers */
+li a:hover {
+  text-decoration: underline;
+}
+
+/* ========== MAIN CONTENT SECTIONS ========== */
 .row {
-  background-color: #01073b4d;
-  display: block;
-  border: 5px solid;
-  margin: 1cm;
-  padding: 1cm;
-  max-width: 100%;
+  background-color: rgba(1, 7, 59, 0.3);
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 90%;
   overflow: hidden;
 }
 
-/* Images (smaller and centered) */
-.img-container-fluid img {
-  max-width: 70%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-}
-
-/* Video (same size as images) */
+/* ========== IMAGES & VIDEOS ========== */
+.img-container-fluid img,
 .video-container-fluid video {
   max-width: 70%;
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
-/* Responsive adjustments for mobile */
+.video-container-fluid video {
+  max-height: 450px;
+}
+
+/* Responsive Adjustment */
 @media (max-width: 768px) {
   .img-container-fluid img,
   .video-container-fluid video {
     max-width: 95%;
   }
-
-  .text {
-    font-size: 18px;
-    padding: 10px;
-  }
 }
 
-/* Text styling */
+/* ========== TEXT ========== */
 .text {
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
+  font-size: 18px;
   font-style: italic;
   color: #fff;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Optional - Make "THE END" more visible */
+.text h2 {
+  font-size: 30px;
   margin-top: 15px;
+  color: #ffe;
 }
